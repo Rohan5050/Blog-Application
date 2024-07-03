@@ -4,11 +4,11 @@ import { Outlet } from 'react-router-dom'; // Ensure Outlet is imported correctl
 import Header from './Header';
 import Footer from './Footer';
 
-const Layout = ({ children }) => {
+const Layout = ({  }) => {
   return (
     <>
       <Header />
-      <Outlet /> {/* Render child routes */}
+        <Outlet /> {/* Render child routes */}
       <Footer />
     </>
   );

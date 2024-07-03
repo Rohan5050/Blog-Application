@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
 
@@ -13,6 +13,7 @@ import UserProfile from './pages/UserProfile';
 import Authors from './pages/Authors';
 import CreatePost from './pages/CreatePost';
 import EditPost from './pages/EditPost';
+import DeletePost from './pages/DeletePost';
 import CategoryPosts from './pages/CategoryPosts';
 import AuthorPosts from './pages/AuthorPosts';
 import Dashboard from './pages/Dashboard';
@@ -42,6 +43,7 @@ root.render(
           <Route path="posts/users/:id" element={<AuthorPosts />} />
           <Route path="myposts/:id" element={<Dashboard />} />
           <Route path="posts/:id/edit" element={<EditPost />} />
+          <Route path="posts/:id/delete" element={<DeletePost />} />
           <Route path="logout" element={<Logout />} />
         </Route>
       </Routes>
