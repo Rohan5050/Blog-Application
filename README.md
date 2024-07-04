@@ -4,9 +4,13 @@ A simple and elegant blog application built with React.js. This application allo
 
 Features
 Create: Users can create new blog posts.
+
 Read: Users can view a list of all blog posts and read individual posts.
+
 Update: Users can edit their existing blog posts.
+
 Delete: Users can delete their blog posts.
+
 Technologies Used
 Frontend: React.js, React Router, Axios
 Backend: Node.js, Express.js
