@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Avatar from '../images/avatar13.jpg'
+import Avatar from '../images/rohan-final.jpg'
 
 const PostAuthor = () => {
   return (
@@ -10,7 +10,7 @@ const PostAuthor = () => {
       </div>
       <div className="post__author-details">
         <h5>By: Rohan Vohra</h5>
-        <small>Just Now</small>
+        <small> 2 Days ago</small>
       </div>
     </Link>
     

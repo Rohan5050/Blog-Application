@@ -19,7 +19,7 @@ const PostDetail = () => {
           <img src={Thumbnail} alt='' />
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rerum temporibus quisquam minima. Omnis repellendus, ea, dolorem sit veniam in nostrum delectus voluptates error doloribus quis. A, tenetur veritatis. Quidem sequi iusto tenetur labore ex voluptatibus adipisci sunt, cupiditate ad ipsa nam doloremque, dolore cumque porro, esse debitis nemo qui.
+          
         </p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi at explicabo iure in ea quisquam sit eaque maxime, a dolores id voluptatibus quo necessitatibus. Quasi cum sunt atque a facere!

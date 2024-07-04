@@ -3,13 +3,20 @@ import { Outlet } from 'react-router-dom'; // Ensure Outlet is imported correctl
 
 import Header from './Header';
 import Footer from './Footer';
+import darkMode from '../darkMode';
 
-const Layout = ({  }) => {
+const Layout = ({ }) => {
   return (
     <>
+    
+    <div>
       <Header />
-        <Outlet /> {/* Render child routes */}
+      <darkMode />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
+    </div>
     </>
   );
 };
