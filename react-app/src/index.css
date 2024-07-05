@@ -193,6 +193,10 @@ nav {
   display:none;
 }
 
+#nav-style {
+  color: #6f6af8;
+}
+
 
 
 
@@ -245,6 +249,15 @@ footer {
   gap: 4rem;
 
 }*/
+
+.aln-txt {
+  position: relative;
+  top: -2rem;
+}
+
+.input-style {
+  border: 1px solid black;
+}
 
 .posts__container {
   display: grid;
@@ -470,25 +483,8 @@ footer {
 
 /***********************Theme Switcher****************************/
 
-.dark-theme {
-  --main-heading: #5f99be;
-  --para-clr: #fff;
-  --btn-bg-color:#5f99be;
-  --bg-clr: #111b20;
 
-}
-
-.light-theme {
-  --main-heading: #5f99be;
-  --para-clr: #333;
-  --btn-bg-color:#111b20;
-  --btn-text-clr:#fff;
-  --bg-clr: #fff;
-
-}
-
-
-/* index.css or App.css */
+/* Header.css */
 body.light-theme {
   background-color: white;
   color: black;
@@ -498,6 +494,103 @@ body.dark-theme {
   background-color: black;
   color: white;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 60px;
+  display: inline-block;
+  text-align: left;
+  top: 1px;
+}
+
+.toggle-switch-checkbox {
+  display: none;
+}
+
+.toggle-switch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #e3e3e3;
+  border-radius: 20px;
+}
+
+.toggle-switch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.toggle-switch-inner:before,
+.toggle-switch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 24px;
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.toggle-switch-inner:before {
+  content: 'Light';
+  padding-left: 10px;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.toggle-switch-inner:after {
+  content: 'Dark';
+  padding-right: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: right;
+}
+
+.toggle-switch-switch {
+  display: block;
+  width: 18px;
+  margin: 3px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 36px;
+  border: 2px solid #e3e3e3;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-inner {
+  margin-left: 0;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
+  right: 0px;
+}
+
+
+body.light-theme #content , body.dark-theme #content {
+  color:#333333;
+  padding: 20px;
+}
+
+
+
+
 
 
 

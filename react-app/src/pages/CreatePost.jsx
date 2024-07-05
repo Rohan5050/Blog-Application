@@ -68,18 +68,18 @@ const CreatePost = () => {
   return (
     <section className="create-post">
       <div className="container">
-        <h2>Create Post</h2>
+        <h2 className='aln-txt'>Create Post</h2>
         {errorMessage && <p className='form__error-message'>{errorMessage}</p>}
         {successMessage && <p className='form__success-message'>{successMessage}</p>}
         <form className='form create-post__form' onSubmit={handleSubmit}>
-          <input
+          <input className='input-style'
             type="text"
             placeholder='Title'
             value={title}
             onChange={e => setTitle(e.target.value)}
             autoFocus
           />
-          <select
+          <select className='input-style'
             name='category'
             value={category}
             onChange={e => setCategory(e.target.value)}

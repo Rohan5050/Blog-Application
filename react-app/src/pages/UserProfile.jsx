@@ -34,10 +34,10 @@ const UserProfile = () => {
             
           </div>
 
-          <h1 className='center' id='profile-photo'>Rohan Vohra</h1>
+          <h1 className='txt-style' id='profile-photo'>Rohan Vohra</h1>
 
           <form className="form profile__form">
-            <p className="form__error-message">This is a error message</p>
+            { /*<p className="form__error-message">This is a error message</p> */}
             <input type='text' placeholder='Full Name' value={name} onChange={e => setName(e.target.value)}/>
             <input type='email' placeholder='Email' value={email} onChange={e => setEmail(e.target.value)}/>
             <input type='password' placeholder='Current Password' value={currentPassword} onChange={e => setCurrentPassword(e.target.value)}/>

@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 
 import Postitem from './Postitem';
 import { DUMMY_POSTS } from '../data';
+import '../index.css'
 
 const Posts = () => {
     const [posts, setPosts] = useState(DUMMY_POSTS);
 
     return (
-        <section className='post'>
+        <section className='post' id='content'>
             {posts.length > 0 ? <div className="container posts__container">
                 {posts.map(({ id, thumbnail, category, title, desc, authorID }) => (<Postitem
                     key={id}
