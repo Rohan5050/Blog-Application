@@ -104,7 +104,8 @@ section {
   display: inline-block;
   width: fit-content;
   padding: 0.5rem,1rem;
-  border-radius: var(--radius-2);
+  border-radius: 8px;
+  padding: 8px;
   background: var(--color-white);
   font-weight: 500;
   cursor: pointer;
@@ -167,7 +168,6 @@ nav {
   top: 0;
   left: 0;
   z-index: 1;
-  border-bottom: 4px solid solid var(--color-bg);
   backdrop-filter: blur(20px);
 }
 
@@ -267,7 +267,7 @@ footer {
 
 .post {
   background: var(--color-white);
-  border: 1px solid grey;
+ /* border: 1px solid grey;*/
   margin: 2rem;
   padding: 1rem;
   border-radius: var(--radius-4);
@@ -484,7 +484,7 @@ footer {
 /***********************Theme Switcher****************************/
 
 
-/* Header.css */
+/* Header.css *//*
 body.light-theme {
   background-color: white;
   color: black;
@@ -586,9 +586,122 @@ header {
 body.light-theme #content , body.dark-theme #content {
   color:#333333;
   padding: 20px;
+}*/
+
+body.light-theme {
+  background-color: white;
+  color: black;
+}
+
+body.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+body.light-theme #content, 
+body.dark-theme #content {
+  color:#f0f0f0;
+  padding: 20px;
+}
+
+/* Add this for the section under the grid */
+body.light-theme #section-under-grid {
+  background-color: white;
+  color: #000;
+}
+
+body.dark-theme #section-under-grid {
+  background-color: #000;
+  color: #f0f0f0;
 }
 
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 60px;
+  display: inline-block;
+  text-align: left;
+  top: 1px;
+}
+
+.toggle-switch-checkbox {
+  display: none;
+}
+
+.toggle-switch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #e3e3e3;
+  border-radius: 20px;
+}
+
+.toggle-switch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.toggle-switch-inner:before,
+.toggle-switch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 24px;
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.toggle-switch-inner:before {
+  content: 'Light';
+  padding-left: 10px;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.toggle-switch-inner:after {
+  content: 'Dark';
+  padding-right: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: right;
+}
+
+.toggle-switch-switch {
+  display: block;
+  width: 18px;
+  margin: 3px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 36px;
+
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-inner {
+  margin-left: 0;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
+  right: 0px;
+}
 
 
 
@@ -732,7 +845,7 @@ body.light-theme #content , body.dark-theme #content {
     gap: 1rem;
   }
 
-  .footer__categories {
+  .footer_categories {
     flex-direction: column;
   }
 
@@ -759,4 +872,6 @@ body.light-theme #content , body.dark-theme #content {
     grid-template-columns: 1fr;
     gap: 1.2rem;
   }
+
+
 }

@@ -1,29 +1,25 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom'; 
+import React from "react";
+import { Outlet } from "react-router-dom";
 
-import Header from './Header';
-import Footer from './Footer';
-import darkMode from '../darkMode';
+import Header from "./Header";
+import Footer from "./Footer";
+import darkMode from "../ThemeToggler";
 
-const Layout = ({ }) => {
+const Layout = ({}) => {
   return (
     <>
-    
-    <div>
-      <Header />
-      <darkMode />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
+      <div>
+        <Header />
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 };
 
 export default Layout;
-
-
 
 /*import React from 'react'
 import {Outlet} from "react-router-dom"
