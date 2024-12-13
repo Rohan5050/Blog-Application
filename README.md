@@ -22,5 +22,3 @@ Node.js, Express.js
 CSS, Bootstrap
 ### Authentication: 
 JWT (JSON Web Token)
-
-Github Link-https://blog-page-tan-psi.vercel.app/
