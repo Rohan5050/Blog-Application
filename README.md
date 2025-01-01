@@ -1,4 +1,4 @@
-Blog Application
+# Blog Application
 
 This is a elegant blog application built with React.js. This application allows users to create, read, update, and delete blog posts & also change theme based on user preferance.
 
